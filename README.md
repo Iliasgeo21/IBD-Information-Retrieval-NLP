@@ -114,18 +114,30 @@ python src/use_model.py --data_dir data --out_dir results
 
 
 
-Reproducible pipelines
+## Reproducible pipelines
+
 SVM (TF-IDF + class-balanced SVC)
+
 •	Text lemmatization & stop-word removal
+
 •	TF-IDF (1–2 n-grams, configurable features)
+
 •	SVC with class_weight='balanced'
+
 •	GridSearchCV across C, gamma, TF-IDF features
+
 •	Metrics: accuracy, weighted precision/recall
+
 •	Artifacts: learning curves, confusion matrix (saved to results/)
+
 Sentence embeddings (USE)
+
 •	Pretrained Universal Sentence Encoder (TF Hub) as frozen encoder
+
 •	Dense head + dropout
+
 •	EarlyStopping & class weights for imbalance
+
 •	Metrics & confusion matrices exported to results/
 
 ## Results
@@ -135,27 +147,40 @@ Sentence embeddings (USE)
 | TF-IDF + SVM | 0.XX     | 0.XX          | 0.XX       |
 | USE + Dense  | 0.XX     | 0.XX          | 0.XX       |
 
-Generated figures:
+## Generated figures:
+
 •	results/learning_curves/svm_learning_curve.png
+
 •	results/confusion_matrices/svm_confusion_matrix.png
+
 •	results/confusion_matrices/use_confusion_matrix.png
 
-Roadmap
+## Roadmap
+
 •	Move current Colab code into src/ modules
+
 •	Add CLI args & config (YAML) for experiments
+
 •	Save trained models (artifacts/)
+
 •	Add tests for preprocessing
+
 •	Add Dockerfile + GitHub Actions (CI)
+
 •	Extend to domain-specific transformers (BioBERT, PubMedBERT)
 
-Cite / Thesis
+## Cite / Thesis
+
 If you use this repository in academic work, please cite the accompanying thesis:
 Georgakopoulos I. (2024). Development of an Effective and Comprehensive Information Retrieval Method for the Impact of Biological Factors on Patients with Inflammatory Bowel Diseases using Data Mining Techniques. National and Kapodistrian University of Athens.
 
-License
+## License
+
 This project is licensed under the MIT License. See LICENSE.
 
-Acknowledgments
+## Acknowledgments
+
 •	PubMed 200k RCT dataset authors
+
 •	Open-source libraries: scikit-learn, TensorFlow, TensorFlow Hub, NLTK, Matplotlib/Seaborn
 
