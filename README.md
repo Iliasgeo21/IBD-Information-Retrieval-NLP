@@ -23,7 +23,8 @@ We:
 5.	Evaluate with accuracy/precision/recall, learning curves and confusion matrices
 Why this matters: IBD literature is large and heterogeneous. A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
 
-Dataset
+## Dataset
+
 •	PubMed 200k RCT (train/dev/test files with section-level labels).
 •	Not included in the repo. Please download from its official source and place as:
 
