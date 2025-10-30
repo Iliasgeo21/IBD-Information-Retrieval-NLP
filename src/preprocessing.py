@@ -38,10 +38,7 @@ def get_lines(filename: str | Path) -> list[str]:
         return f.readlines()
 
 def parse_pubmed200k_file(filename: str | Path) -> list[dict]:
-    """
-    Διαβάζει το *.txt του PubMed 200k RCT και επιστρέφει list από dicts
-    με πεδία: abstract_id, target, text, line_number, total_lines
-    """
+
     input_lines = get_lines(filename)
     abstract_lines = ""
     samples = []
