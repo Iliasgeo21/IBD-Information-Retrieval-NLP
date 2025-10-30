@@ -33,7 +33,7 @@ data/
 └── test.txt
 Optionally you may keep a small sample in data/sample/ for quick runs.
 
-Repository structure
+## Repository structure
 
 This project follows a modular structure typical for machine learning and NLP pipelines:
 .
