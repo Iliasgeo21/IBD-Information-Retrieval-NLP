@@ -31,9 +31,13 @@ A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
 •	Not included in the repo. Please download from its official source and place as:
 
 data/
+
 ├── train.txt
+
 ├── dev.txt
+
 └── test.txt
+
 Optionally you may keep a small sample in data/sample/ for quick runs.
 
 ## Repository structure
