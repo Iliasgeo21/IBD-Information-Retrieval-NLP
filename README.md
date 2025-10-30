@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-ML-yellow.svg)
+![NLP](https://img.shields.io/badge/NLP-Biomedical-green.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+
 # IBD-Information-Retrieval-NLP
 Natural Language Processing pipeline for information retrieval on Inflammatory Bowel Diseases (IBD) using the PubMed 200k RCT dataset. Includes preprocessing, statistical and deep learning models (TF-IDF + SVM, Transformer embeddings), evaluation and visualization for biomedical text classification and analysis.
 ## Table of contents
