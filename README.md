@@ -21,7 +21,8 @@ We:
 3.	Train baselines with TF-IDF + SVM
 4.	Train neural models with pretrained sentence embeddings (Universal Sentence Encoder)
 5.	Evaluate with accuracy/precision/recall, learning curves and confusion matrices
-Why this matters: IBD literature is large and heterogeneous. A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
+Why this matters: IBD literature is large and heterogeneous.
+A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
 
 ## Dataset
 
@@ -93,7 +94,8 @@ Sentence embeddings (USE)
 •	EarlyStopping & class weights for imbalance
 •	Metrics & confusion matrices exported to results/
 
-Results
+## Results
+
 | Model        | Accuracy | Precision (w) | Recall (w) |
 | ------------ | -------- | ------------- | ---------- |
 | TF-IDF + SVM | 0.XX     | 0.XX          | 0.XX       |
