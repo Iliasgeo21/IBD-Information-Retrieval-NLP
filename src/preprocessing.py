@@ -6,7 +6,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
-# ——— keywords you used για IBD & anti-TNF filtering ———
+# ——— keywords for IBD & anti-TNF filtering ———
 IBD_TERMS = [
     'inflammatory bowel disease', 'IBD', "Crohn's disease", 'Ulcerative colitis',
     'colitis', 'ileitis', 'IBS', 'enteritis', 'intestinal microbiota',
@@ -82,7 +82,7 @@ def filter_by_keywords(df: pd.DataFrame,
                        ibd_terms: list[str] = IBD_TERMS,
                        anti_tnf_terms: list[str] = ANTI_TNF_TERMS) -> pd.DataFrame:
     keywords = ibd_terms + anti_tnf_terms
-    # φτιάχνουμε ασφαλές regex
+    
     escaped = [re.escape(k) for k in keywords]
     pattern = r'\b(?:' + '|'.join(escaped) + r')\b'
     return df[df["text"].str.contains(pattern, flags=re.IGNORECASE, na=False)]
