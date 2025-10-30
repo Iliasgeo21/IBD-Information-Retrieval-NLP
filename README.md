@@ -27,6 +27,7 @@ A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
 ## Dataset
 
 •	PubMed 200k RCT (train/dev/test files with section-level labels).
+
 •	Not included in the repo. Please download from its official source and place as:
 
 data/
