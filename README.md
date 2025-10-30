@@ -3,14 +3,23 @@ Natural Language Processing pipeline for information retrieval on Inflammatory B
 ## Table of contents
 
 •	Project overview
+
 •	Dataset
+
 •	Repository structure
+
 •	Quickstart
+
 •	Reproducible pipelines
+
 •	Results
+
 •	Roadmap
+
 •	Cite / Thesis
+
 •	License
+
 •	Acknowledgments
 
 ## Project overview
