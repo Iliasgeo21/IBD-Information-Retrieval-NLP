@@ -55,18 +55,31 @@ Optionally you may keep a small sample in data/sample/ for quick runs.
 This project follows a modular structure typical for machine learning and NLP pipelines:
 .
 ├── data/                     # <- place dataset files here (not tracked)
+
 ├── notebooks/
+
 │   └── Thesis.ipynb          # exploratory analysis & figures
+
 ├── src/
+
 │   ├── preprocessing.py      # text loading, parsing, cleaning
+
 │   ├── svm_model.py          # TF-IDF + SVM pipeline + grid search
+
 │   ├── use_model.py          # Sentence embeddings (USE) + dense head
+
 │   └── utils.py              # metrics, plots, saving
+
 ├── results/
+
 │   ├── confusion_matrices/
+
 │   └── learning_curves/
+
 ├── requirements.txt
+
 ├── LICENSE
+
 └── README.md
 
 
@@ -82,15 +95,21 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 2) Prepare data
+
 •	Download PubMed 200k RCT and place train.txt, dev.txt, test.txt under data/.
 
-3) Run (current state)
+4) Run (current state)
+   
 •	Open notebooks/Thesis.ipynb and run all cells
+
 or
+
 •	Run the SVM pipeline (after refactor)
+
 python src/svm_model.py --data_dir data --out_dir results
 
 •	Run the sentence-embeddings pipeline (after refactor)
+
 python src/use_model.py --data_dir data --out_dir results
 
 
