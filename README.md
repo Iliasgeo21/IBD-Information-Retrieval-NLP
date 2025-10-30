@@ -154,6 +154,9 @@ Sentence embeddings (USE)
 | TF-IDF + SVM | 0.XX     | 0.XX          | 0.XX       |
 | USE + Dense  | 0.XX     | 0.XX          | 0.XX       |
 
+![Confusion Matrix Example](results/confusion_matrices/svm_confusion_matrix.png)
+
+
 ## Generated figures:
 
 •	results/learning_curves/svm_learning_curve.png
