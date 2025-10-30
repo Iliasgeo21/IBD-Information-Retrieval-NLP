@@ -89,7 +89,8 @@ This project follows a modular structure typical for machine learning and NLP pi
 └── README.md
 
 
-Quickstart
+## 🚀 Quickstart / Installation
+
 1) Create environment
    
 python -m venv .venv
@@ -175,7 +176,7 @@ Sentence embeddings (USE)
 
 •	Extend to domain-specific transformers (BioBERT, PubMedBERT)
 
-## Cite / Thesis
+## 📚 Cite / Thesis
 
 If you use this repository in academic work, please cite the accompanying thesis:
 Georgakopoulos I. (2024). Development of an Effective and Comprehensive Information Retrieval Method for the Impact of Biological Factors on Patients with Inflammatory Bowel Diseases using Data Mining Techniques. National and Kapodistrian University of Athens.
