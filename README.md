@@ -12,7 +12,8 @@ Table of contents
 •	License
 •	Acknowledgments
 
-Project overview
+## Project overview
+
 The goal is to retrieve and classify biomedical text relevant to IBD and biological/therapeutic factors (e.g., anti-TNF) from research abstracts.
 We:
 1.	Parse and structure abstracts with line-level labels
