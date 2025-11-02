@@ -172,6 +172,28 @@ The TF-IDF + SVM model achieved strong performance on structured biomedical abst
 #### Confusion Matrix
 ![SVM confusion matrix](src/results/figures/confusion_matrix_svm.png)
 
+### 📊 USE + Dense Model Results
+
+#### ✅ Classification Metrics
+| Class | Precision | Recall | F1-Score | Support |
+|---|---|---|---|---|
+| BACKGROUND | 0.53 | 0.59 | 0.56 | 501 |
+| CONCLUSIONS | 0.65 | 0.70 | 0.67 | 704 |
+| METHODS | 0.83 | 0.83 | 0.83 | 999 |
+| OBJECTIVE | 0.70 | 0.65 | 0.67 | 592 |
+| RESULTS | 0.85 | 0.80 | 0.82 | 1164 |
+| **Accuracy** | - | - | **0.74** | **3960** |
+
+#### 📈 Learning Curve
+<img src="src/results/figures/learning_curve_use.png" width="500"/>
+
+#### 🔵 Confusion Matrices
+
+**Validation Set**
+<img src="src/results/figures/confusion_matrix_use_val.png" width="500"/>
+
+**Test Set**
+<img src="src/results/figures/confusion_matrix_use_test.png" width="500"/>
 
 
 
