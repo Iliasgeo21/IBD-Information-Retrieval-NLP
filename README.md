@@ -149,12 +149,30 @@ Sentence embeddings (USE)
 
 ## Results
 
-| Model        | Accuracy | Precision (w) | Recall (w) |
-| ------------ | -------- | ------------- | ---------- |
-| TF-IDF + SVM | 0.XX     | 0.XX          | 0.XX       |
-| USE + Dense  | 0.XX     | 0.XX          | 0.XX       |
+### TF-IDF + SVM Model
 
-![Confusion Matrix Example](results/confusion_matrices/svm_confusion_matrix.png)
+The TF-IDF + SVM model achieved strong performance on structured biomedical abstracts from the PubMed 200k RCT dataset, especially in the **METHODS** and **RESULTS** categories.
+
+**Classification Report (Validation Set)**
+
+| Class        | Precision | Recall | F1-score | Support |
+|--------------|----------:|-------:|--------:|--------:|
+| BACKGROUND   | 0.46      | 0.61   | 0.53     | 533     |
+| CONCLUSIONS  | 0.62      | 0.74   | 0.67     | 764     |
+| METHODS      | 0.83      | 0.86   | 0.85     | 1028    |
+| OBJECTIVE    | 0.74      | 0.58   | 0.65     | 596     |
+| RESULTS      | 0.92      | 0.72   | 0.80     | 1100    |
+
+**Validation Accuracy:** ~0.71  
+**Macro F1-score:** ~0.70
+
+#### Learning Curve
+![SVM learning curve](src/results/figures/learning_curve_svm.png)
+
+#### Confusion Matrix
+![SVM confusion matrix](src/results/figures/confusion_matrix_svm.png)
+
+
 
 
 ## Generated figures:
