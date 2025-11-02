@@ -28,7 +28,7 @@ Natural Language Processing pipeline for information retrieval on Inflammatory B
 
 •	Acknowledgments
 
-## Project overview
+## 🎯 Project overview
 
 The goal is to retrieve and classify biomedical text relevant to IBD and biological/therapeutic factors (e.g., anti-TNF) from research abstracts.
 We:
@@ -40,7 +40,7 @@ We:
 Why this matters: IBD literature is large and heterogeneous.
 A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
 
-## Dataset
+## 📂 Dataset
 
 •	PubMed 200k RCT (train/dev/test files with section-level labels).
 
@@ -56,7 +56,7 @@ data/
 
 Optionally you may keep a small sample in data/sample/ for quick runs.
 
-## Repository structure
+## 🧱 Repository structure
 
 This project follows a modular structure typical for machine learning and NLP pipelines:
 .
@@ -147,9 +147,9 @@ Sentence embeddings (USE)
 
 •	Metrics & confusion matrices exported to results/
 
-## Results
+## 📊 Results
 
-### 📊 TF-IDF + SVM Model
+### 📎✨ TF-IDF + SVM Model
 
 The TF-IDF + SVM model achieved strong performance on structured biomedical abstracts from the PubMed 200k RCT dataset, especially in the **METHODS** and **RESULTS** categories.
 
@@ -172,7 +172,7 @@ The TF-IDF + SVM model achieved strong performance on structured biomedical abst
 #### 🔵  Confusion Matrix
 ![SVM confusion matrix](src/results/figures/confusion_matrix_svm.png)
 
-###  ⚡ USE + Dense Model Results
+###  🧠⚡ USE + Dense Model Results
 
 #### ✅ Classification Metrics
 | Class | Precision | Recall | F1-Score | Support |
@@ -195,7 +195,7 @@ The TF-IDF + SVM model achieved strong performance on structured biomedical abst
 **Test Set**
 <img src="src/results/figures/confusion_matrix_use_test.png" width="500"/>
 
-### 🧠 Conv1D Neural Network Model
+### 🔬🧠 Conv1D Neural Network Model
 
 The Conv1D text-classification model further improves performance across most classes, showing stronger generalization on large biomedical text sets.
 
@@ -216,7 +216,7 @@ The Conv1D text-classification model further improves performance across most cl
 <img src="src/results/figures/confusion_matrix_conv1d_test.png" width="500"/>
 
 
-## Roadmap
+## 🛠️ Roadmap
 
 •	Move current Colab code into src/ modules
 
@@ -235,11 +235,11 @@ The Conv1D text-classification model further improves performance across most cl
 If you use this repository in academic work, please cite the accompanying thesis:
 Georgakopoulos I. (2024). Development of an Effective and Comprehensive Information Retrieval Method for the Impact of Biological Factors on Patients with Inflammatory Bowel Diseases using Data Mining Techniques. National and Kapodistrian University of Athens.
 
-## License
+## 🔖 License
 
 This project is licensed under the MIT License. See LICENSE.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 •	PubMed 200k RCT dataset authors
 
