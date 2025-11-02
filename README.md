@@ -215,13 +215,6 @@ The Conv1D text-classification model further improves performance across most cl
 ### 🔵 Confusion Matrix (Test Set)
 <img src="src/results/figures/confusion_matrix_conv1d_test.png" width="500"/>
 
-## Generated figures:
-
-•	results/learning_curves/svm_learning_curve.png
-
-•	results/confusion_matrices/svm_confusion_matrix.png
-
-•	results/confusion_matrices/use_confusion_matrix.png
 
 ## Roadmap
 
