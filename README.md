@@ -195,7 +195,24 @@ The TF-IDF + SVM model achieved strong performance on structured biomedical abst
 **Test Set**
 <img src="src/results/figures/confusion_matrix_use_test.png" width="500"/>
 
+### 🧠 Conv1D Neural Network Model
 
+The Conv1D text-classification model further improves performance across most classes, showing stronger generalization on large biomedical text sets.
+
+### ✅ Classification Metrics
+Class	Precision	Recall	F1-Score	Support
+BACKGROUND	0.51	0.69	0.59	2575
+CONCLUSIONS	0.66	0.76	0.71	4396
+METHODS	0.88	0.88	0.88	9559
+OBJECTIVE	0.77	0.58	0.66	2425
+RESULTS	0.90	0.81	0.85	9977
+Accuracy	—	—	0.80	28932
+
+### 📈 Learning Curve
+<img src="src/results/figures/learning_curve_conv1d.png" width="500"/>
+
+### 🔵 Confusion Matrix (Test Set)
+<img src="src/results/figures/confusion_matrix_conv1d_test.png" width="500"/>
 
 ## Generated figures:
 
