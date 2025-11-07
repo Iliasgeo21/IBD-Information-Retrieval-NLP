@@ -42,52 +42,60 @@ A clean IR+NLP pipeline helps surface clinically relevant evidence faster.
 
 ## 📂 Dataset
 
-•	PubMed 200k RCT (train/dev/test files with section-level labels).
+This project uses the **PubMed 200k RCT (Randomized Controlled Trials)** dataset.
 
-•	Not included in the repo. Please download from its official source and place as:
+✅ **The dataset is NOT included in this repository**  
+because it is too large and protected by Kaggle’s terms of use.
+
+### How to get the data
+
+Download it manually from Kaggle:
+
+🔗 https://www.kaggle.com/datasets/matthewjansen/pubmed-200k-rtc
+
+After downloading and extracting the files, place them inside the `data/` folder.
+
+The expected structure is:
+
+```
 
 data/
+│── train.csv
+│── train.txt
+│── dev.csv
+│── dev.txt
+│── test.csv
+└── test.tx
 
-├── train.txt
+```
 
-├── dev.txt
 
-└── test.txt
+The notebook and scripts will automatically load the data from this location.
 
-Optionally you may keep a small sample in data/sample/ for quick runs.
+
 
 ## 🧱 Repository structure
 
 This project follows a modular structure typical for machine learning and NLP pipelines:
+
+```
 .
-├── data/                     # <- place dataset files here (not tracked)
-
+├── data/                     
 ├── notebooks/
-
 │   └── Thesis.ipynb          # exploratory analysis & figures
-
 ├── src/
-
 │   ├── preprocessing.py      # text loading, parsing, cleaning
-
 │   ├── svm_model.py          # TF-IDF + SVM pipeline + grid search
-
 │   ├── use_model.py          # Sentence embeddings (USE) + dense head
-
 │   └── utils.py              # metrics, plots, saving
-
 ├── results/
-
 │   ├── confusion_matrices/
-
 │   └── learning_curves/
-
 ├── requirements.txt
-
 ├── LICENSE
-
 └── README.md
 
+```
 
 ## 🚀 Quickstart / Installation
 
