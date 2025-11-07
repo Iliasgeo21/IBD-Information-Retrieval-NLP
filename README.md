@@ -65,7 +65,7 @@ data/
 │── dev.csv
 │── dev.txt
 │── test.csv
-└── test.tx
+└── test.txt
 
 ```
 
